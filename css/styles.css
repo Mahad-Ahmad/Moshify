@@ -284,7 +284,7 @@ a {
   }
 }
 
-/* CARDS */
+/* Cards */
 
 .card {
   border-radius: 7px;
@@ -310,26 +310,10 @@ a {
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
-/* .container {
-  width: 25%;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 0 20px 10px #f3f3f3;
-}
 
-.header {
-  background-color: var(--color-secondary);
-  padding: 15px;
-  color: white;
-  padding: 2rem 3rem;
+.card--primary .badge--primary {
+  background: #0571ff;
 }
-body {
-  margin: 30px;
-}
-
-.text {
-  padding: 2rem 3rem;
-} */
 
 /* Plans */
 
