@@ -152,13 +152,13 @@ a {
 
 .list--tick .list__item {
   /*nesting cause want to apply padding to tick skin list otherwise gonna apply to all*/
-  padding: 0.5rem;
+  padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
-    padding: 0;
+    padding-left: 0;
   }
 }
 
@@ -664,7 +664,7 @@ a {
   align-items: center;
 }
 
-.nav__list {
+.list {
   width: 100%;
   margin: 0;
 }
@@ -836,5 +836,83 @@ a {
   .block-showcase__image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #232323;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__section {
+  border-bottom: 1px solid #393939;
+  padding: 2rem;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer__copyright {
+  color: white;
+  font-size: 2.1rem;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    border: 0;
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: none;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
   }
 }
